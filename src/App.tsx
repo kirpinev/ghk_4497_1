@@ -175,9 +175,17 @@ export const App = () => {
           {variants.map((variant, index, array) => {
             return (
               <React.Fragment key={variant.name}>
-                <Typography.Text view="primary-large" weight="bold">
+                {/*<Typography.Text view="primary-large" weight="bold">*/}
+                {/*  {variant.name}*/}
+                {/*</Typography.Text>*/}
+                <Typography.TitleResponsive
+                    tag="h3"
+                    view="small"
+                    font="system"
+                    weight="bold"
+                >
                   {variant.name}
-                </Typography.Text>
+                </Typography.TitleResponsive>
                 <Gap size={16} />
                 <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
                   {variant.services.map((service, index) => {
