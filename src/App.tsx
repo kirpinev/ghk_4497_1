@@ -270,7 +270,7 @@ export const App = () => {
           view="primary"
           onClick={submit}
         >
-          Продолжить
+          Добавить
         </ButtonMobile>
       </div>
     </>
